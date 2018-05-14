@@ -1,5 +1,20 @@
 # KWAS API - dokumentacja v1.0
 
+---
+[Dostępne zasoby](#dostępne-zasoby)
+
+[Wydobywanie zasobów](#wydobywanie-zasobów)
+
+[Dodawanie zasobów](#dodawanie-zasobów)
+
+[Edytowanie zasobów](#edytowanie-zasobów)
+
+[Usuwanie zasobów](#usuwanie-zasobów)
+
+[Testowanie](#testowanie)
+
+---
+
 ### Dostępne zasoby
 
 Pojedyńczy kwas zapisany jest jako dokument w bazie MongoDB. Przykładowy dokument wykorzystujący wszystkie dostępne pola wygląda tak:
@@ -8,7 +23,7 @@ Pojedyńczy kwas zapisany jest jako dokument w bazie MongoDB. Przykładowy dokum
 {
   id: <id>,
   date: <data>,
-  user: <nazwa_urzytkownika>,
+  user: <nazwa urzytkownika>,
   title: <nazwa kwasu>,
   source: <link>,
   source_type: <typ źródła>,
@@ -16,12 +31,12 @@ Pojedyńczy kwas zapisany jest jako dokument w bazie MongoDB. Przykładowy dokum
 }
 ```
 
-**id** : id automatycznie nadawane przez baze danych
-**date**: data automatycznie nadawana przez baze danych
-**user**: nazwa urzytkownika, to pole musi być zdefiniowane
-**title**: nazwa kwasu, to pole musi być zdefinowane
-**source**: link do kwasu, to pole musi być zdefinowane
-**source_type**: typ źródła, np. yt, 9gag, uam, domyślna wartość - "none"
+**id** : id automatycznie nadawane przez baze danych </br>
+**date**: data automatycznie nadawana przez baze danych </br>
+**user**: nazwa urzytkownika, to pole musi być zdefiniowane </br>
+**title**: nazwa kwasu, to pole musi być zdefinowane </br>
+**source**: link do kwasu, to pole musi być zdefinowane </br>
+**source_type**: typ źródła, np. yt, 9gag, uam, domyślna wartość - "none" </br>
 **tag**: opcjonalny tag, domyślna wartość - "none"
 
 ---
@@ -50,7 +65,7 @@ GET http://<tutaj_url>:<port>/api/v1/kwasy/5af6f5b20892ba00116e62d7
 ```
 
 </br></br>
-Możemy też urzyć query params do wydobycia zasobów z polami o konkretnej wartości:
+Możemy też urzyć [query string](https://en.wikipedia.org/wiki/Query_string) do wydobycia zasobów z polami o konkretnej wartości:
 
 ```
 GET http://<tutaj_url>:<port>/api/v1/kwasy/?<pole1>=<coś>&<pole2>=<coś>
@@ -66,7 +81,7 @@ GET http://<tutaj_url>:<port>/api/v1/kwasy/?user=Kociamber
 
 ### Dodawanie zasobów
 
-Do dodawania zasobów służy metoda **POST**.By dodać zasób do wybranej kolekcji wykonujemy:
+Do dodawania zasobów służy metoda **POST**. By dodać zasób do wybranej kolekcji wykonujemy:
 
 ```
 POST http://<tutaj_url>:<port>/api/v1/kwasy
