@@ -13,6 +13,8 @@
     "koa": "^2.5.1",
     "koa-body": "^2.5.0",
     "koa-bodyparser": "^4.2.0",
+    "koa-cors": "0.0.16",
+    "koa-logger": "^3.2.0",
     "koa-rest-mongoose": "^2.0.3",
     "koa-router": "^7.4.0",
     "mongoose": "^5.0.17"

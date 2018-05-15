@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <meta charset="UTF-8">
+  </head>
+  <style>
+    .red_rectangle{
+      width: 200px;
+      height: 200px;
+      display: inline-block;
+      background-color: rgb(255,0,0);
+    }
+  </style>
+  <body>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+    <div class="red_rectangle"></div>
+
+    klik, klik ...
+  </body>
+  <script>
+    function set_random_rgb(e){
+      var new_rgb = "rgb(" +
+                    Math.floor(Math.random()*255) + ", " +
+                    Math.floor(Math.random()*255) + ", " +
+                    Math.floor(Math.random()*255) + ")"
+      e.target.style.backgroundColor = new_rgb
+    }
+
+    var all_divs = document.getElementsByClassName("red_rectangle")
+    
+    for (var i = 0; i < all_divs.length; i++) {
+      console.log(all_divs[i])
+      all_divs[i].addEventListener("mouseenter", set_random_rgb)
+    }
+  </script>
+</html>

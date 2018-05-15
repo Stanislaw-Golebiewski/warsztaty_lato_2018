@@ -23,7 +23,7 @@ Pojedyńczy kwas zapisany jest jako dokument w bazie MongoDB. Przykładowy dokum
 {
   id: <id>,
   date: <data>,
-  user: <nazwa urzytkownika>,
+  user: <nazwa użytkownika>,
   title: <nazwa kwasu>,
   source: <link>,
   source_type: <typ źródła>,
@@ -33,7 +33,7 @@ Pojedyńczy kwas zapisany jest jako dokument w bazie MongoDB. Przykładowy dokum
 
 **id** : id automatycznie nadawane przez baze danych </br>
 **date**: data automatycznie nadawana przez baze danych </br>
-**user**: nazwa urzytkownika, to pole musi być zdefiniowane </br>
+**user**: nazwa użytkownika, to pole musi być zdefiniowane </br>
 **title**: nazwa kwasu, to pole musi być zdefinowane </br>
 **source**: link do kwasu, to pole musi być zdefinowane </br>
 **source_type**: typ źródła, np. yt, 9gag, uam, domyślna wartość - "none" </br>
@@ -52,7 +52,7 @@ GET http://<tutaj_url>:<port>/api/v1/kwasy
 ```
 
 </br></br>
-Możemy też wydobyć konkretny kwas z całej kolekcji urzywając id:
+Możemy też wydobyć konkretny kwas z całej kolekcji używając id:
 
 ```
 GET http://<tutaj_url>:<port>/api/v1/kwasy/<id>
@@ -65,7 +65,7 @@ GET http://<tutaj_url>:<port>/api/v1/kwasy/5af6f5b20892ba00116e62d7
 ```
 
 </br></br>
-Możemy też urzyć [query string](https://en.wikipedia.org/wiki/Query_string) do wydobycia zasobów z polami o konkretnej wartości:
+Możemy też użyć [query string](https://en.wikipedia.org/wiki/Query_string) do wydobycia zasobów z polami o konkretnej wartości:
 
 ```
 GET http://<tutaj_url>:<port>/api/v1/kwasy/?<pole1>=<coś>&<pole2>=<coś>
@@ -140,7 +140,7 @@ nie doda nowego zasobu, wiadomośćią zwrotną będzie następujący komunikat:
 ---
 ### Edytowanie zasobów
 
-Jeśli chcemty wykonać update zasobu, urzywamy metody PUT:
+Jeśli chcemty wykonać update zasobu, używamy metody PUT:
 ```
 
 PUT http://<tutaj_url>:<port>/api/v1/kwasy/<id>
@@ -180,7 +180,7 @@ w wiadomości zwrotnej dostaniemy uaktualniony zasób:
 
 ### Usuwanie zasobów
 
-Jeśli chcemy usunąć zasób, urzywamy metody DELETE:
+Jeśli chcemy usunąć zasób, używamy metody DELETE:
 ```
 
 DELETE http://<tutaj_url>:<port>/api/v1/kwasy/<id>
