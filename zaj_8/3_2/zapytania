@@ -1,0 +1,25 @@
+wszystkie kwasy:
+
+  zapytanie do wykonania:
+  POST http://<url>:<port>:/api/v1/kwasy + body
+
+  przykłady:
+  -----------------
+  <httpie>
+  http -v POST http://<url>:<port>/api/v1/kwasy user=Kociamber title="Pepe" source=https://i.redd.it/9wst0x110eay.png source_type=png
+
+  -----------------
+  axios
+  	.post("http:/<url>:<port>/api/v1/kwasy", {
+  		user: "Kociamber",
+  		title: "Pepe",
+  		source: "https://i.redd.it/9wst0x110eay.png source_type=png",
+  		source_type: "png"
+  	})
+  	.then(function(response) {
+  		console.log(response.data)
+  	})
+  	.catch(function(error) {
+  		console.log("wystapil blad!")
+  	});
+  -----------------

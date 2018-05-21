@@ -1,0 +1,41 @@
+wszystkie kwasy:
+
+  zapytanie do wykonania:
+  GET http://<url>:<port>:/api/v1/kwasy
+
+  przykłady:
+  -----------------
+  <httpie>
+  http -v GET http://<url>:<port>/api/v1/kwasy
+  -----------------
+  <axios> (w pliku .js)
+  axios
+  	.get("http:/<url>:<port>/api/v1/kwasy")
+  	.then(function(response) {
+  		console.log(response.data)
+  	})
+  	.catch(function(error) {
+  		console.log("wystapil blad!")
+  	});
+  -----------------
+
+filtrowane kwasy:
+
+  zapytanie do wykonania:
+  GET http://<url>:<port>:/api/v1/kwasy
+
+  przykłady:
+  -----------------
+  <httpie>
+  http -v GET http://<url>:<port>/api/v1/kwasy/source_type=yt&user=Kociamber
+  -----------------
+  <axios> (w pliku .js)
+  axios
+    .get("http://<url>:<port>/api/v1/kwasy/source_type=yt&user=Kociamber")
+  .then(function(response) {
+    console.log(response.data)
+  })
+  .catch(function(error) {
+    console.log("wystapil blad!")
+  });
+  -----------------
