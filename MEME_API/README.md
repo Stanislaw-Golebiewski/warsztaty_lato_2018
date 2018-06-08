@@ -44,3 +44,7 @@ Tak wygląda typowy zasób:
 *   pola **\_id** oraz **data** są generowane automatycznie
 
 *   przy dodawaniu mema wymagane są pola: **user**, **title**, **soruce**, reszta, jeśli nie została podana, wypełni się automatycznie domyślnymi wartościami
+
+### Znane bugi
+
+*   można dodać komentarz od mema bez pola user lub text, zostanie naprawione w następnej wersji!
