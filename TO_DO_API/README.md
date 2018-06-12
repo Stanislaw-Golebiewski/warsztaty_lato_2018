@@ -39,16 +39,11 @@ Tak wygląda typowy task:
 }
 ```
 
-*   **\_id** - _unikalne id zadania_
-*   **data** - _data dodania_
-*   **urgency** - _poziom priorytetu zadania_
-*   **done** - _czy task został wykonany?_
-*   **user** - _nazwa użytkownika_
-*   **title** - _treść zadania_
-*   **\_\_v** - _tym się nie przejmujemy_
-
-### Uwagi
-
-*   pola **\_id** oraz **data** są generowane automatycznie
-
-*   przy dodawaniu nowego zadania wymagane są pola: **user**, **title**, reszta, jeśli nie została podana, wypełni się automatycznie domyślnymi wartościami
+| pole    | typ    | wymagane przy dodawaniu? | domyślna wartość         |
+| ------- | ------ | ------------------------ | ------------------------ |
+| \_id    | ID     | nie                      | generowane automatycznie |
+| date    | Date   | nie                      | generowane automatycznie |
+| urgency | Number | nie                      | 0                        |
+| done    | Bool   | nie                      | false                    |
+| user    | String | tak                      | -                        |
+| title   | String | tak                      | -                        |
