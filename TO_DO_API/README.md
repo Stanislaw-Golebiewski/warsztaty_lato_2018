@@ -39,11 +39,12 @@ Tak wygląda typowy task:
 }
 ```
 
-| pole    | typ    | wymagane przy dodawaniu? | domyślna wartość         |
-| ------- | ------ | ------------------------ | ------------------------ |
-| \_id    | ID     | nie                      | generowane automatycznie |
-| date    | Date   | nie                      | generowane automatycznie |
-| urgency | Number | nie                      | 0                        |
-| done    | Bool   | nie                      | false                    |
-| user    | String | tak                      | -                        |
-| title   | String | tak                      | -                        |
+| pole        | typ    | wymagane przy dodawaniu? | domyślna wartość         |
+| ----------- | ------ | ------------------------ | ------------------------ |
+| \_id        | ID     | nie                      | generowane automatycznie |
+| date        | Date   | nie                      | generowane automatycznie |
+| urgency     | Number | nie                      | 0                        |
+| done        | Bool   | nie                      | false                    |
+| user        | String | tak                      | brak                     |
+| title       | String | tak                      | brak                     |
+| description | String | nie                      | -                        |
